@@ -1,1 +1,7 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21934084)
+## _Markdown_
+
+To help communicate with others in an effective manner, developers use Markdown. [Here's an article outlining some syntax in Markdown](https://www.markdownguide.org/basic-syntax/) You can do some pretty cool things in Markdown:
+
+### ***Admonition***
+> **Note:** Click space to dodge obstacles!
+> **Note:** Stay on the ground to earn points to use in the shop!
