@@ -1,17 +1,26 @@
 namespace storeRunner
 {
-    public class Shop
+    public class Store
     {
-
-        string userInput
-        private int _CurrentFunds = ;
-        public int Credits
+        public static void RunStore()
         {
-            get{return _CurrentCredit;}
-            set{ _CurrentCredit = value;}
+
+            Console.WriteLine($"Welcome to the store! It worked! Press enter to cycle to menu.");
+            Console.ReadLine();
+            return;
+
+            //public string lawnMowerWorst;
+            // public string lawnMowerMid;
+            // public string lawnMowerBest;
+
+            //        public string Shop(string lawnMowerWorst, string lawnMowerMid, string lawnMowerBest)
+            // {
+            //      this.mower1Data = lawnMowerWorst;
+
+
+
+            //}
         }
-
-        public string mowerType {get; set;} = "Basic Mower";
-
     }
+
 }
