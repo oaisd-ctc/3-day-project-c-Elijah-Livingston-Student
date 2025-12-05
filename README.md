@@ -4,4 +4,5 @@ To help communicate with others in an effective manner, developers use Markdown.
 
 ### ***Admonition***
 > **Note:** Click space to dodge obstacles!
+
 > **Note:** Stay on the ground to earn points to use in the shop!
