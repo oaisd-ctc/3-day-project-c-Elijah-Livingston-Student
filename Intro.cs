@@ -64,4 +64,47 @@ public class Intro
             Console.WriteLine("Bye!");
         }
     }
+
+    public static void Menu()
+    {
+        menu:
+        Console.WriteLine("Hello!");
+        Console.WriteLine("Would you like to go to the shop, credits, mowing, or eixt");
+        Console.WriteLine("(s/c/m/e)");
+        string menuOption = Console.ReadLine();
+        if (menuOption == "s")
+        {
+            
+        }
+        else if (menuOption == "c")
+        {
+                        Console.WriteLine("David:");
+            Thread.Sleep(100);
+            Console.WriteLine("Shop");
+            Thread.Sleep(100);
+            Console.WriteLine("Heath:");
+            Thread.Sleep(100);
+            Console.WriteLine("Art, Movement");
+            Thread.Sleep(100);
+            Console.WriteLine("Al:");
+            Thread.Sleep(100);
+            Console.WriteLine("Powerup functions");
+            Thread.Sleep(100);
+            Console.WriteLine("Elijah:");
+            Thread.Sleep(100);
+            Console.WriteLine("Intro");
+            Thread.Sleep(2000);
+            goto menu;
+        }
+        else if (menuOption == "m")
+        {
+            
+        }
+        else
+        {
+            Console.WriteLine("Thanks for playing!");
+        }
+
+
+    }
 }
