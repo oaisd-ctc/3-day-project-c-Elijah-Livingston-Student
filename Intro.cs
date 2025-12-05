@@ -80,7 +80,7 @@ public class Intro
         {
                         Console.WriteLine("David:");
             Thread.Sleep(100);
-            Console.WriteLine("Shop");
+            Console.WriteLine("Shop Keeper, Project Manager");
             Thread.Sleep(100);
             Console.WriteLine("Heath:");
             Thread.Sleep(100);
@@ -92,7 +92,7 @@ public class Intro
             Thread.Sleep(100);
             Console.WriteLine("Elijah:");
             Thread.Sleep(100);
-            Console.WriteLine("Intro");
+            Console.WriteLine("Intro, other Menus");
             Thread.Sleep(2000);
             goto menu;
         }
