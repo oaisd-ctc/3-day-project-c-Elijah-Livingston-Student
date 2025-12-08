@@ -4,7 +4,7 @@ public class Intro
 {
     public static void Introduction()
     {
-
+        int money;
         int amountOfLives;
     StartOfGame:
         Console.Clear();
@@ -67,18 +67,18 @@ public class Intro
 
     public static void Menu()
     {
-        menu:
+    menu:
         Console.WriteLine("Hello!");
         Console.WriteLine("Would you like to go to the shop, credits, mowing, or eixt");
         Console.WriteLine("(s/c/m/e)");
         string menuOption = Console.ReadLine();
         if (menuOption == "s")
         {
-            
+            Shop(money);
         }
         else if (menuOption == "c")
         {
-                        Console.WriteLine("David:");
+            Console.WriteLine("David:");
             Thread.Sleep(100);
             Console.WriteLine("Shop Keeper, Project Manager");
             Thread.Sleep(100);
@@ -98,7 +98,7 @@ public class Intro
         }
         else if (menuOption == "m")
         {
-            
+            goto gameplay;
         }
         else
         {
