@@ -4,7 +4,7 @@ public class Intro
 {
     public static void Introduction()
     {
-
+        int money;
         int amountOfLives;
     StartOfGame:
         Console.Clear();
@@ -64,4 +64,53 @@ public class Intro
             Console.WriteLine("Bye!");
         }
     }
+
+    public static void Menu()
+    {
+    menu:
+        Console.WriteLine("Hello!");
+        Console.WriteLine("Would you like to go to the shop, credits, mowing, or eixt");
+        Console.WriteLine("(s/c/m/e)");
+        string menuOption = Console.ReadLine();
+        if (menuOption == "s")
+        {
+            goto ShopRunner;
+        }
+        else if (menuOption == "c")
+        {
+            Console.WriteLine("David:");
+            Thread.Sleep(100);
+            Console.WriteLine("Shop Keeper, Project Manager");
+            Thread.Sleep(100);
+            Console.WriteLine("Heath:");
+            Thread.Sleep(100);
+            Console.WriteLine("Art, Movement");
+            Thread.Sleep(100);
+            Console.WriteLine("Al:");
+            Thread.Sleep(100);
+            Console.WriteLine("Powerup functions");
+            Thread.Sleep(100);
+            Console.WriteLine("Elijah:");
+            Thread.Sleep(100);
+            Console.WriteLine("Intro, other Menus");
+            Thread.Sleep(2000);
+            goto menu;
+        }
+        else if (menuOption == "m")
+        {
+            goto gameplay;
+        }
+        else
+        {
+            Console.WriteLine("Thanks for playing!");
+        }
+
+
+    }
+    public static void End()
+    {
+        Console.WriteLine("You won! You have $" + money + "Yay!");
+        Console.WriteLine("Come back and mow another time!");
+    }
+
 }
