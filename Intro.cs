@@ -74,7 +74,7 @@ public class Intro
         string menuOption = Console.ReadLine();
         if (menuOption == "s")
         {
-            Shop(money);
+            goto ShopRunner;
         }
         else if (menuOption == "c")
         {
@@ -107,4 +107,10 @@ public class Intro
 
 
     }
+    public static void End()
+    {
+        Console.WriteLine("You won! You have $" + money + "Yay!");
+        Console.WriteLine("Come back and mow another time!");
+    }
+
 }
