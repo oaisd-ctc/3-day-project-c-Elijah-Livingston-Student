@@ -1,1 +1,19 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21934084)
+Markdown
+To help communicate with others in an effective manner, developers use Markdown. Here's an article outlining some syntax in Markdown You can do some pretty cool things in Markdown:
+
+Admonition
+Controls: Click space to dodge obstacles!
+
+Tip: Stay on the ground to earn points!
+
+Tip: Once you crash spend your points at the shop
+
+Section: Powerup Tips:
+
+Tip: Collect powerups to gain temporary buffs!
+
+Tip: Collect the + powerup for double score!
+
+Tip: Collect the square powerup for invincibility!
+
+Tip: Collect the heart powerup for another life!
