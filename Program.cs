@@ -25,6 +25,7 @@ public class Program
     public static int powerUp;
     public static int randomY = 0;
     public static bool end = false;
+    public static string menuOption;
     public static void Main(string[] args)
     {
         while (!end)
@@ -109,7 +110,7 @@ public class Program
         Console.WriteLine("Hello!");
         Console.WriteLine("Would you like to go to the shop, credits, mowing, or exit");
         Console.WriteLine("(s/c/m/e)");
-        string menuOption = Console.ReadLine();
+        menuOption = Console.ReadLine();
         if (menuOption == "e")
         {
             Console.WriteLine("Thanks for playing!");
@@ -167,6 +168,11 @@ public class Program
 
     public static void Game()
     {
+        if (menuOption == "e")
+        {
+            end = true;
+            Menu();
+        }
         if (difficulty == "e")
         {
             lives = 10;
