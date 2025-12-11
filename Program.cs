@@ -24,6 +24,7 @@ public class Program
     public static int powerUpX;
     public static int powerUp;
     public static int randomY = 0;
+    public static bool end = false;
     public static void Main(string[] args)
     {
         Introduction();
@@ -92,6 +93,10 @@ public class Program
     public static void Menu()
     {
     menu:
+    if (end == true)
+        {
+            return;
+        }
         Console.CursorVisible = true;
         Console.WriteLine("Hello!");
         Console.WriteLine("Would you like to go to the shop, credits, mowing, or exit");
@@ -106,7 +111,7 @@ public class Program
         {
             ShopRunner();
         }
-        else if (menuOption == "c")
+        else if (menuOption == "c" || end == true)
         {
             Console.WriteLine("David:");
             Thread.Sleep(100);
@@ -147,7 +152,7 @@ public class Program
     {
         Console.WriteLine("You won! You have $" + money + "Yay!");
         Console.WriteLine("Come back and mow another time!");
-        return;
+        end = true;
     }
     // Global game state variables
 
