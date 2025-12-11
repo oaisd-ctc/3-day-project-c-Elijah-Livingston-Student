@@ -27,10 +27,17 @@ public class Program
     public static bool end = false;
     public static void Main(string[] args)
     {
-        Introduction();
+        while (!end)
+        {
+            Introduction();
+        }
     }
     public static void Introduction()
     {
+    if (end)
+        {
+            return;
+        }
 
     StartOfGame:
         Console.Clear();
@@ -83,6 +90,7 @@ public class Program
         else if (startChoice == "l")
         {
             Console.WriteLine("Bye!");
+            end = true;
         }
         else
         {
@@ -93,19 +101,20 @@ public class Program
     public static void Menu()
     {
     menu:
-    if (end == true)
+    if (end)
         {
-            return;
+            Introduction();
         }
         Console.CursorVisible = true;
         Console.WriteLine("Hello!");
         Console.WriteLine("Would you like to go to the shop, credits, mowing, or exit");
         Console.WriteLine("(s/c/m/e)");
         string menuOption = Console.ReadLine();
-        if (menuOption == "e"|| end == true)
+        if (menuOption == "e")
         {
             Console.WriteLine("Thanks for playing!");
-            return;
+            end = true;
+            Introduction();
         }
         if (menuOption == "s")
         {
