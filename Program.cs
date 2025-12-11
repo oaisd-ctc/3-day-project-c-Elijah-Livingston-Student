@@ -102,7 +102,7 @@ public class Program
         Console.WriteLine("Would you like to go to the shop, credits, mowing, or exit");
         Console.WriteLine("(s/c/m/e)");
         string menuOption = Console.ReadLine();
-        if (menuOption == "e")
+        if (menuOption == "e"|| end == true)
         {
             Console.WriteLine("Thanks for playing!");
             return;
@@ -111,7 +111,7 @@ public class Program
         {
             ShopRunner();
         }
-        else if (menuOption == "c" || end == true)
+        else if (menuOption == "c")
         {
             Console.WriteLine("David:");
             Thread.Sleep(100);
@@ -141,7 +141,7 @@ public class Program
             }
             Game();
         }
-        else
+        else if (menuOption != "m" && menuOption != "c" && menuOption != "s" && menuOption != "e")
         {
             Menu();
         }
